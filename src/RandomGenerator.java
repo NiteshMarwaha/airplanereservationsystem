@@ -30,10 +30,10 @@ public class RandomGenerator {
     /* Generates Random ID for the Customers....*/
     public void randomIDGen() {
         Random rand = new Random();
-        String randomID = Integer.toString(rand.nextInt(1000000));
+        String randomID = Integer.toString(rand.nextInt(1_000_000));
 
-        while (Integer.parseInt(randomID) < 20000) {
-            randomID = Integer.toString(rand.nextInt(1000000));
+        while (Integer.parseInt(randomID) < 20_000) {
+            randomID = Integer.toString(rand.nextInt(1_000_000));
         }
         setRandomNum(randomID);
     }
